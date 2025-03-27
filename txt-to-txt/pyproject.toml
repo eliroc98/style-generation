@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "txt-to-txt"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+ipykernel = "^6.29.5"
+torch = "^2.6.0"
+huggingface-hub = {extras = ["cli"], version = "^0.29.3"}
+einops = "^0.8.1"
+matplotlib = "^3.10.1"
+notebook = "^7.3.3"
+ipywidgets = "^8.1.5"
+transformers = "^4.50.1"
+cupy-cuda12x = "^13.4.1"
+scipy = "^1.15.2"
+tqdm = "^4.67.1"
+pandas = "^2.2.3"
+transformer-lens = "^2.15.0"
+plotly = "^6.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
