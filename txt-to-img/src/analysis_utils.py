@@ -135,8 +135,8 @@ def save_image_with_heatmaps(
         axes[2].set_title(f"Style: '{style_word}'")
         axes[2].axis("off")
 
-        plt.suptitle(f"Prompt: {prompt}", y=0.08, fontsize=10)
-        plt.tight_layout(rect=[0, 0.05, 1, 1])
+        plt.suptitle(f"Prompt: {prompt}", y=0.075)
+        plt.tight_layout(rect=[0, 0.1, 1, 1])
 
         filename = f"img_s{seed}_{content_word.replace(' ','_')}_{style_word.replace(' ','_')}_overlay.png"
         fig.savefig(img_dir / filename)
